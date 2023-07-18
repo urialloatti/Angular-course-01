@@ -1,0 +1,15 @@
+<h1>Ghibli characters</h1>
+<hr>
+<div class="row">
+  <div class="col">
+    <ghibli-char-list
+      [characterList]="characters"
+      (onDeleteCharacter)="onDeleteCharacter($event)">
+    </ghibli-char-list>
+  </div>
+  <div class="col">
+    <ghibli-add-char
+      (onNewCharacter)="onNewCharacter($event)">
+    </ghibli-add-char>
+  </div>
+</div>

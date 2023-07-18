@@ -1,0 +1,22 @@
+<form class="row" (ngSubmit)="emitCharacter()">
+  <h4>Add character</h4>
+  <input
+    type="text"
+    [(ngModel)]="character.name"
+    name="name"
+    placeholder="Name"
+    class="form-control mb-2">
+  <input
+    type="number"
+    [(ngModel)]="character.raiting"
+    name="raiting"
+    placeholder="Raiting"
+    class="form-control mb-2">
+  <button
+    class="btn btn-primary"
+    type="submit"
+    >
+      Submit
+  </button>
+
+</form>
